@@ -1,0 +1,50 @@
+<!-- <div style="text-align: center;">
+  <form [formGroup]="form">
+    <span><label>name</label></span>
+    <input type="name" placeholder="first name" pattern="[a-zA-Z]+$" formControlName="name" class="form-control">
+    <br>
+    <span style="color: red;" *ngIf="name && name.invalid && name.touched">enter your name</span>
+    <br>
+    <span><label>lastname</label></span>
+    <input type="name" placeholder="last name"  pattern="[a-zA-Z]+$" formControlName="lastname" class="form-control">
+    <br>
+    <span style="color: red;" *ngIf="lastname && lastname.invalid && lastname.touched">enter your lastname</span>
+    <br>
+    <span><label>email</label></span>
+    <input type="email" placeholder="email" formControlName="email" class="form-control">
+    <br>
+    <span style="color: red;" *ngIf="email && email.invalid && email.touched">enter your email</span>
+    <br>
+    <span><label>password</label></span>
+    <input type="password" placeholder="password" formControlName="password" class="form-control">
+    <br>
+    <span style="color: red;" *ngIf="password && password.invalid && password.touched">enter your password</span>
+    <br>
+    <span><label>confirmPassword</label></span>
+    <input type="password" placeholder="confirm password" formControlName="confirmPassword" class="form-control">
+    <br>
+    <span style="color: red;" *ngIf="confirmPassword && confirmPassword.invalid && confirmPassword.touched">enter your confirmPassword</span>
+    <br>
+    <button [disabled]="form.invalid" type="submit" (click)="submit()">submit</button>
+  </form>
+</div> -->
+
+<table border="2" *ngFor="let a of data">
+
+
+
+
+
+   
+
+<tbody>
+  <tr>
+    <td style="background-color: red;">{{a.id}}</td>
+    <td style="background-color: aqua;">{{a.name}}</td>
+    <td style="background-color:aqua">{{a.age}}</td>
+    
+  </tr>
+  
+</tbody>
+</table>
+
